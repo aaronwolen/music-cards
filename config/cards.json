@@ -1,0 +1,22 @@
+[
+  {
+    "code": "550008352a",
+    "type": "album",
+    "action": "Home Assistant",
+    "artURL": "https://i.scdn.co/image/c32ebb720f47b8de22e613e76703ec8fa90c1870",
+    "title": "Cars",
+    "subtitle": "Movie Soundtrack",
+    "uri": "spotify:album:3Xiz5kq12VOzTw9Kun7m0f",
+    "id": 1525636375
+  },
+  {
+    "code": "550007f2ee",
+    "type": "song",
+    "action": "Home Assistant",
+    "artURL": "https://i.imgur.com/zB78P97.png",
+    "title": "Be Our Guest",
+    "subtitle": "Beauty and the Beast",
+    "uri": "spotify:track:6btdYzQ8eZFBrOlUKVHuz0",
+    "id": 1526675443
+  }
+]
