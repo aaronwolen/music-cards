@@ -6,16 +6,19 @@ Click the image below to see a video of it being used
 
 ## Requires
 ### software:
-- python evdev. To install:
-```bash
-wget http://dl.piwall.co.uk/python-evdev_0.4.1-1_armhf.deb
 
-dpkg -i python-evdev_0.4.1-1_armhf.deb
+- python evdev. To install:
+
+```bash
+sudo apt-get install python3-evdev
 ```
+
 - python mpd-2. To install
+
 ```bash
 pip install python-mpd2
 ```
+
 ### hardware:
 - [Raspberry Pi Zero (Don't forget micro sd card and power supply)](http://www.microcenter.com/product/486575/Zero_W)
 - [USB OTG Hub](https://www.amazon.com/gp/product/B01HYJLZH6/ref=oh_aui_detailpage_o08_s00?ie=UTF8&psc=1)
@@ -59,3 +62,6 @@ sudo systemctl status musiccards.service
 1. Place the files under homeassistant_files in the config directory of your [Homeassistant](https://www.home-assistant.io/) machine.
 2. You will need to create custom_components/switch directory in your config directory and place [`gmusic.py`](https://github.com/mf-social/Home-Assistant/blob/master/custom_components/switch/gmusic.py) in there.
 3. Follow [this forum post](https://community.home-assistant.io/t/google-music-in-ha/10976) to install gmusicapi, find your device id, and set up the component.
+
+# Local Development
+
