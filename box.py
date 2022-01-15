@@ -20,7 +20,7 @@ while True:
         plist = cardList.getPlaylist(card)
         print(f"Playlist {plist}")
         if plist != "":
-            subprocess.check_call(["./haplaylist.sh %s" % plist], shell=True)
+            subprocess.check_call(["./haevent.sh %s" % plist], shell=True)
         range(10000)  # some payload code
         time.sleep(0.2)  # sane sleep time of 0.1 seconds
     except OSError as e:
