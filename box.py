@@ -11,6 +11,15 @@ import time
 reader = Reader()
 cardList = CardList()
 
+# verify necessary Home-Assistant environment variables are set
+if not os.environ.get("HASS_SERVER"):
+    print("HASS_SERVER not set")
+    sys.exit(1)
+
+if not os.environ.get("HASS_TOKEN"):
+    print("HASS_TOKEN not set")
+    sys.exit(1)
+
 print("Ready: place a card on top of the reader")
 
 while True:

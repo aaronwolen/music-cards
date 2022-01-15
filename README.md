@@ -30,9 +30,10 @@ Please note that Raspberry Pi Zero is insufficient to run both the Home Assistan
 
 ## Steps to Configure and/or Run once if you dont want Music Cards to AutoStart
 
+1. Define `HASS_SERVER` and `HASS_TOKEN` environment variables
 1. Run `python config.py` to select the reader from the inputs
-2. Run `python add_card.py` to scan cards and enter your Google Play Music Playlist Name
-3. Run `python box.py` to start the application and verify that it is reading your cards and csv list properly
+1. Run `python add_card.py` to scan cards and enter your Google Play Music Playlist Name
+1. Run `python box.py` to start the application and verify that it is reading your cards and csv list properly
 
 ## Install Service to AutoStart
 
