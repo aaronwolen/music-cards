@@ -9,7 +9,7 @@ for dev in devices:
     print(f"{i}, {dev.name}")
     i += 1
 
-dev_id = int(raw_input("Device Number: "))
+dev_id = int(input("Device Number: "))
 
 with open(path + "/deviceName.txt", "w") as f:
     f.write(devices[dev_id].name)
