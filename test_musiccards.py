@@ -1,4 +1,5 @@
 import pytest
+import json
 from CardList import CardList
 
 
@@ -35,8 +36,17 @@ def test_get_nonexistent_card():
     assert card == None
 
 
-def test_add_card():
-    card_list = CardList()
+def test_add_card(tmpdir):
+
+    # make a copy of cards.json
+    with open("config/cards.json", "r") as f:
+        cards = json.load(f)
+        f.close()
+    with open(tmpdir + "/cards.json", "w") as f:
+        json.dump(cards, f)
+        f.close()
+
+    card_list = CardList(config_dir=tmpdir)
     card_list.add_card(
         code="5500080cc7",
         uri="spotify:track:6oYkwjI1TKP9D0Y9II1GT7",
