@@ -8,9 +8,6 @@ import sys
 from CardList import CardList
 from Reader import Reader
 
-reader = Reader()
-card_list = CardList()
-
 def record_user_input(label: str) -> str:
     """
     Record user input
