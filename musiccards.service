@@ -6,7 +6,7 @@ After=network.target
 Type=simple
 User=pi
 WorkingDirectory=/home/pi/Projects/music-cards
-ExecStart=/usr/bin/python3 -u /home/pi/Projects/music-cards/box.py
+ExecStart=/usr/bin/python3 -u /home/pi/Projects/music-cards/box.py --config-dir /home/pi/Projects/rpi-docker-stack/magic-cards/config
 Restart=always
 RestartSec=5
 
