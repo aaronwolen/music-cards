@@ -36,6 +36,7 @@ class CardList:
         """Read card list from json file"""
         with open(self.card_list_file, "r") as f:
             self.__cards = {card["code"]: card for card in json.load(f)}
+            print(f"Found {len(self.__cards)} cards in '{self.get_card_list_file()}'")
             f.close()
 
     def get_card_list(self) -> List[dict]:
