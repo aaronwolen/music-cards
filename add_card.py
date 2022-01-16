@@ -21,6 +21,7 @@ def record_user_input(label: str) -> str:
 def read_card_from_reader() -> dict:
     """Read card from reader"""
     print("Setting up the reader")
+    reader = Reader()
 
     while True:
         print("\nPlace the card in the reader...")
